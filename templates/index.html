@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a4a2e">
+  <title>Gi ett barn i Burundi ett skoleår — kr 1 000 | Rise for Africa</title>
+  <meta name="description" content="800+ barn hjalp vi i fjor. Nå trenger vi 1 000 barn for skoleåret 2026–27. Kr 1 000 gir ett barn bøker, uniform og mentorskap i hele ett år.">
+  <link rel="canonical" href="{{ site_url }}/">
+  <link rel="alternate" hreflang="nb" href="{{ site_url }}/">
+  <link rel="alternate" hreflang="x-default" href="{{ site_url }}/">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Rise for Africa">
+  <meta property="og:title"       content="Kr 1 000 gir ett barn i Burundi ett helt skoleår">
+  <meta property="og:description" content="800+ barn fikk hjelp i fjor. Nå trenger 1 000 barn din støtte. Skolebok, uniform, rekvisita og mentorskap — alt for kr 1 000.">
+  <meta property="og:url"         content="{{ site_url }}/">
+  <meta property="og:image"       content="{{ site_url }}/static/og-image.jpg">
+  <meta property="og:locale"      content="nb_NO">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Kr 1 000 gir ett barn i Burundi ett helt skoleår">
+  <meta name="twitter:description" content="800+ barn fikk hjelp i fjor. Nå trenger 1 000 barn din støtte.">
+  <meta name="twitter:image"       content="{{ site_url }}/static/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site_url }}/#website",
+        "url": "{{ site_url }}",
+        "name": "Rise for Africa — Burundi-kampanjen",
+        "inLanguage": "nb"
+      },
+      {
+        "@type": "NGO",
+        "@id": "{{ site_url }}/#org",
+        "name": "Rise for Africa",
+        "url": "https://riseforafrica.org",
+        "description": "Non-profit organisasjon som gir mentorskap og skolestøtte til sårbare barn og unge i Burundi.",
+        "founder": {
+          "@type": "Person",
+          "name": "Marie-Chantal Nzeyimana",
+          "url": "https://www.linkedin.com/in/marie-chantal-nzeyimana-93741631/"
+        },
+        "areaServed": { "@type": "Country", "name": "Burundi" },
+        "sameAs": [
+          "https://riseforafrica.org",
+          "https://www.linkedin.com/company/rise-for-africa/",
+          "{{ gofundme_url }}"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hvor går pengene som doneres?",
+            "acceptedAnswer": { "@type": "Answer", "text": "100% av midlene går direkte til skolerekvisita, uniformer og mentorskapsprogrammer for barn i Bujumbura-regionen i Burundi. Rise for Africa samarbeider med lokale skoler og partnere for å sikre transparent bruk av midler." }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jeg donere et vilkårlig beløp?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ja, absolutt. Alle beløp hjelper. Kr 500 dekker bøker til ett barn. Kr 1 000 gir ett barn et helt skoleår med alt inkludert. Kr 5 000 hjelper 5 barn." }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvem er Rise for Africa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Rise for Africa er en non-profit organisasjon grunnlagt av Marie-Chantal Nzeyimana. Organisasjonen tilbyr mentorskapsprogrammer og skolestøtte til unge og enslige mødre i Bujumbura-regionen i Burundi." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark: #0d2b1a;
+      --green:      #1a4a2e;
+      --green-mid:  #2a6040;
+      --orange:     #c85a14;
+      --orange-l:   #e0701e;
+      --cream:      #fdf8f0;
+      --cream-d:    #f5ede0;
+      --text:       #1a1a1a;
+      --muted:      #5c6059;
+      --white:      #fff;
+      --gold:       #c9901a;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); background: var(--white); }
+
+    h1,h2,h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--green-dark);
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 62px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.3);
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 34px; height: 34px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--orange) 0%, var(--gold) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: .9rem; color: #fff;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -.02em;
+    }
+    .nav-name { color: #fff; font-size: .92rem; font-weight: 600; line-height: 1.2; }
+    .nav-name small { display: block; color: rgba(255,255,255,.5); font-size: .7rem; font-weight: 400; }
+    .nav-cta {
+      background: var(--orange); color: #fff; border: none;
+      border-radius: 8px; padding: 9px 20px;
+      font-size: .85rem; font-weight: 700; cursor: pointer;
+      text-decoration: none; transition: background .2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--orange-l); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--green-dark);
+      position: relative; overflow: hidden;
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(200, 90, 20, .18) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 80%, rgba(26, 74, 46, .6) 0%, transparent 55%);
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(200, 90, 20, .15);
+      border: 1px solid rgba(200, 90, 20, .35);
+      color: #f0a060; border-radius: 24px;
+      padding: 6px 18px; font-size: .78rem; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .hero-badge::before {
+      content: ''; display: block;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--orange-l);
+      box-shadow: 0 0 0 3px rgba(200,90,20,.3);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 3px rgba(200,90,20,.3); }
+      50%      { box-shadow: 0 0 0 7px rgba(200,90,20,.0); }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900; line-height: 1.08;
+      color: #fff; letter-spacing: -.02em;
+      margin-bottom: 8px;
+    }
+    .hero h1 em {
+      font-style: italic; color: #f0a060;
+      display: block;
+    }
+    .hero-sub {
+      font-size: clamp(.95rem, 2.5vw, 1.15rem);
+      color: rgba(255,255,255,.7);
+      line-height: 1.65; max-width: 580px;
+      margin: 16px auto 36px;
+    }
+
+    /* Progress */
+    .progress-wrap {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px; padding: 22px 28px;
+      max-width: 560px; margin: 0 auto 32px;
+    }
+    .progress-meta {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 12px;
+    }
+    .progress-raised {
+      color: #fff; font-size: 1.4rem; font-weight: 800;
+      font-family: 'Playfair Display', serif;
+    }
+    .progress-raised span { font-size: .75rem; font-weight: 500; color: rgba(255,255,255,.5); font-family: 'Inter',sans-serif; }
+    .progress-goal { font-size: .78rem; color: rgba(255,255,255,.45); }
+    .progress-bar-outer {
+      background: rgba(255,255,255,.1); border-radius: 99px;
+      height: 8px; overflow: hidden; margin-bottom: 12px;
+    }
+    .progress-bar-inner {
+      height: 100%; border-radius: 99px;
+      background: linear-gradient(90deg, var(--orange) 0%, var(--gold) 100%);
+      width: {{ progress_pct }}%;
+      min-width: 2%; /* always show a sliver */
+      transition: width 1s ease;
+    }
+    .progress-sub {
+      display: flex; justify-content: space-between;
+      font-size: .75rem; color: rgba(255,255,255,.45);
+    }
+    .progress-sub strong { color: #f0a060; }
+
+    .hero-btns {
+      display: flex; gap: 14px; justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-hero-primary {
+      background: var(--orange); color: #fff;
+      border: none; border-radius: 12px;
+      padding: 16px 36px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; text-decoration: none;
+      transition: background .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-hero-primary:hover { background: var(--orange-l); transform: translateY(-2px); }
+    .btn-hero-outline {
+      background: transparent; color: rgba(255,255,255,.8);
+      border: 1.5px solid rgba(255,255,255,.25); border-radius: 12px;
+      padding: 16px 28px; font-size: 1rem; font-weight: 600;
+      text-decoration: none; transition: border-color .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-hero-outline:hover { border-color: rgba(255,255,255,.6); }
+
+    .hero-trust {
+      margin-top: 24px;
+      font-size: .75rem; color: rgba(255,255,255,.35);
+      display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+    }
+    .hero-trust span { display: flex; align-items: center; gap: 5px; }
+
+    /* ── IMPACT STATS ── */
+    .stats-section {
+      background: var(--white);
+      padding: 64px 24px;
+      border-bottom: 1px solid #e8ede9;
+    }
+    .stats-inner {
+      max-width: 900px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    @media(max-width:640px) { .stats-inner { grid-template-columns: 1fr; gap: 0; } }
+    .stat-card {
+      text-align: center; padding: 36px 24px;
+      border-right: 1px solid #e8ede9;
+    }
+    .stat-card:last-child { border-right: none; }
+    @media(max-width:640px) {
+      .stat-card { border-right: none; border-bottom: 1px solid #e8ede9; }
+      .stat-card:last-child { border-bottom: none; }
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 4rem);
+      font-weight: 900; line-height: 1;
+      color: var(--green); margin-bottom: 8px;
+      display: block;
+    }
+    .stat-num .stat-unit { font-size: .45em; font-weight: 700; color: var(--orange); vertical-align: super; }
+    .stat-label { font-size: .9rem; color: var(--muted); font-weight: 500; line-height: 1.4; }
+    .stat-sub { font-size: .75rem; color: #aab0aa; margin-top: 4px; }
+
+    /* ── SECTION BASE ── */
+    .section { padding: 80px 24px; }
+    .section-cream { background: var(--cream); }
+    .section-dark  { background: var(--green-dark); color: #fff; }
+    .container { max-width: 1040px; margin: 0 auto; }
+    .container-narrow { max-width: 720px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800; line-height: 1.15;
+      letter-spacing: -.02em; margin-bottom: 18px;
+    }
+    .section-dark .section-title { color: #fff; }
+    .section-body {
+      font-size: 1rem; color: var(--muted); line-height: 1.75;
+    }
+    .section-dark .section-body { color: rgba(255,255,255,.65); }
+
+    /* ── PROBLEM SECTION ── */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center;
+    }
+    @media(max-width:700px) { .problem-grid { grid-template-columns: 1fr; } }
+    .problem-visual {
+      background: linear-gradient(145deg, var(--green-dark), #0a1f10);
+      border-radius: 20px; padding: 48px 36px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .problem-visual::before {
+      content: '';
+      position: absolute; top: -40px; right: -40px;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,90,20,.3), transparent);
+    }
+    .stat-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem; font-weight: 900; color: var(--orange-l);
+      line-height: 1; display: block; margin-bottom: 8px;
+    }
+    .stat-big-label {
+      color: rgba(255,255,255,.8); font-size: 1rem;
+      font-weight: 600; line-height: 1.4;
+    }
+    .stat-divider {
+      width: 40px; height: 2px; background: rgba(255,255,255,.15);
+      margin: 24px auto;
+    }
+    .stat-secondary { color: rgba(255,255,255,.5); font-size: .82rem; }
+
+    .problem-list { list-style: none; padding: 0; margin: 28px 0; }
+    .problem-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 0; border-bottom: 1px solid #e8ede9;
+      font-size: .95rem; line-height: 1.6; color: var(--text);
+    }
+    .problem-list li:last-child { border-bottom: none; }
+    .problem-icon {
+      width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+      background: rgba(200,90,20,.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    /* ── WHAT YOUR GIFT PROVIDES ── */
+    .gift-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px; margin-top: 48px;
+    }
+    .gift-card {
+      background: var(--white); border-radius: 16px;
+      border: 1.5px solid #e0e8e3;
+      padding: 32px 24px;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .gift-card:hover { box-shadow: 0 8px 32px rgba(26,74,46,.1); transform: translateY(-3px); }
+    .gift-icon {
+      font-size: 2.2rem; margin-bottom: 16px; display: block;
+    }
+    .gift-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 800; color: var(--green);
+      margin-bottom: 8px;
+    }
+    .gift-card p { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+    .gift-pct {
+      display: inline-block; margin-top: 14px;
+      background: rgba(26,74,46,.07); color: var(--green-mid);
+      border-radius: 6px; padding: 3px 10px;
+      font-size: .73rem; font-weight: 700;
+    }
+
+    /* ── DOT GRID ── */
+    .dot-section {
+      padding: 80px 24px;
+      background: var(--green-dark); color: #fff;
+      text-align: center;
+    }
+    .dot-section .section-title { color: #fff; margin-bottom: 10px; }
+    .dot-section-sub {
+      color: rgba(255,255,255,.55); font-size: .95rem;
+      max-width: 500px; margin: 0 auto 48px;
+      line-height: 1.65;
+    }
+    .dot-legend {
+      display: flex; justify-content: center; gap: 24px;
+      margin-bottom: 28px; font-size: .78rem; font-weight: 600;
+    }
+    .dot-legend-item { display: flex; align-items: center; gap: 7px; color: rgba(255,255,255,.6); }
+    .dot-legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot-legend-dot.funded   { background: var(--orange-l); }
+    .dot-legend-dot.waiting  { background: rgba(255,255,255,.15); }
+    #dot-grid {
+      display: flex; flex-wrap: wrap;
+      gap: 5px; justify-content: center;
+      max-width: 680px; margin: 0 auto 36px;
+    }
+    .dot {
+      width: 11px; height: 11px; border-radius: 50%;
+      background: rgba(255,255,255,.12);
+      transition: background .3s;
+    }
+    .dot.funded { background: var(--orange-l); box-shadow: 0 0 6px rgba(224,112,30,.5); }
+    .dot-caption {
+      font-size: .85rem; color: rgba(255,255,255,.45);
+      margin-top: 4px;
+    }
+    .dot-caption strong { color: #f0a060; }
+
+    /* ── FOUNDER ── */
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 60px; align-items: center;
+    }
+    @media(max-width:800px) { .founder-grid { grid-template-columns: 1fr; } }
+    .founder-photo-wrap { position: relative; }
+    .founder-photo {
+      width: 100%; border-radius: 20px;
+      aspect-ratio: 4/5; object-fit: cover; object-position: top;
+      display: block;
+      background: linear-gradient(145deg, var(--green-mid), var(--green-dark));
+    }
+    .founder-initials {
+      position: absolute; inset: 0; border-radius: 20px;
+      background: linear-gradient(145deg, var(--green-mid), var(--green-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem; font-weight: 900; color: rgba(255,255,255,.25);
+      letter-spacing: -.02em;
+    }
+    .founder-card {
+      position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: var(--green-dark); color: #fff;
+      border-radius: 12px; padding: 14px 22px;
+      white-space: nowrap; text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,.4);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .founder-card strong { display: block; font-size: .88rem; font-weight: 700; }
+    .founder-card small  { color: rgba(255,255,255,.5); font-size: .72rem; }
+    .founder-quote {
+      border-left: 3px solid var(--orange);
+      padding: 20px 24px;
+      background: rgba(200,90,20,.06);
+      border-radius: 0 12px 12px 0;
+      margin: 24px 0 32px;
+      font-style: italic;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; line-height: 1.7;
+      color: var(--text);
+    }
+    .founder-quote cite {
+      display: block; font-style: normal;
+      font-size: .78rem; font-family: 'Inter', sans-serif;
+      font-weight: 600; color: var(--muted);
+      margin-top: 10px;
+    }
+    .founder-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-founder-link {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 18px; border-radius: 8px; font-size: .82rem; font-weight: 600;
+      text-decoration: none; transition: background .2s;
+    }
+    .btn-linkedin {
+      background: #0a66c2; color: #fff;
+    }
+    .btn-linkedin:hover { background: #0958a8; }
+    .btn-rfa {
+      background: var(--cream-d); color: var(--green);
+      border: 1.5px solid #d0dcd2;
+    }
+    .btn-rfa:hover { background: #eae4d5; }
+
+    /* ── URGENCY CTA BAND ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--orange) 0%, #b04010 100%);
+      padding: 72px 24px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-band::before {
+      content: '';
+      position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+      width: 500px; height: 300px;
+      background: radial-gradient(ellipse, rgba(255,255,255,.08), transparent);
+    }
+    .cta-band-inner { position: relative; z-index: 1; max-width: 620px; margin: 0 auto; }
+    .cta-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900; color: #fff; line-height: 1.15; margin-bottom: 16px;
+    }
+    .cta-band p { color: rgba(255,255,255,.8); font-size: 1rem; line-height: 1.65; margin-bottom: 36px; }
+    .btn-cta-white {
+      background: #fff; color: var(--orange);
+      border: none; border-radius: 12px;
+      padding: 17px 40px; font-size: 1.05rem; font-weight: 800;
+      cursor: pointer; text-decoration: none;
+      transition: transform .15s, box-shadow .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    }
+    .btn-cta-white:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.25); }
+    .cta-band-meta {
+      margin-top: 20px; font-size: .75rem;
+      color: rgba(255,255,255,.5);
+    }
+
+    /* ── SHARE SECTION ── */
+    .share-section {
+      background: var(--cream); padding: 56px 24px; text-align: center;
+    }
+    .share-inner { max-width: 600px; margin: 0 auto; }
+    .share-inner p { font-size: .95rem; color: var(--muted); margin-bottom: 24px; }
+    .share-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-share {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px; border-radius: 9px;
+      font-size: .85rem; font-weight: 600; text-decoration: none;
+      transition: opacity .2s, transform .15s;
+      cursor: pointer; border: none;
+    }
+    .btn-share:hover { opacity: .9; transform: translateY(-1px); }
+    .btn-whatsapp { background: #25d366; color: #fff; }
+    .btn-facebook { background: #1877f2; color: #fff; }
+    .btn-copy     { background: var(--green); color: #fff; }
+    .copy-confirm {
+      font-size: .75rem; color: var(--green);
+      margin-top: 10px; display: none;
+      font-weight: 600;
+    }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 80px 24px; background: var(--white); }
+    .faq-list { margin-top: 48px; }
+    .faq-item {
+      border-bottom: 1px solid #e0e8e3;
+    }
+    .faq-item summary {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; cursor: pointer;
+      font-size: 1rem; font-weight: 600; color: var(--text);
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-arrow {
+      font-size: 1.3rem; color: var(--orange); transition: transform .2s;
+      flex-shrink: 0; margin-left: 16px;
+    }
+    details[open] .faq-arrow { transform: rotate(45deg); }
+    .faq-item p {
+      padding: 0 0 22px;
+      font-size: .93rem; color: var(--muted); line-height: 1.75;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060f09; color: rgba(255,255,255,.4);
+      padding: 40px 24px; text-align: center;
+      font-size: .8rem; line-height: 2;
+    }
+    footer strong { color: rgba(255,255,255,.75); }
+    footer a { color: rgba(255,255,255,.4); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.75); }
+
+    /* ── UTILS ── */
+    .text-orange { color: var(--orange); }
+    .text-green  { color: var(--green); }
+    @media(max-width:480px) {
+      .section { padding: 56px 20px; }
+      .hero    { padding: 56px 20px 56px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="/" class="nav-brand">
+    <div class="nav-logo-mark">R</div>
+    <div class="nav-name">
+      Rise for Africa
+      <small>Burundi Education Fund 2026</small>
+    </div>
+  </a>
+  <a href="{{ gofundme_url }}" target="_blank" rel="noopener" class="nav-cta">Doner nå →</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Rise for Africa · Burundi 2026–2027</div>
+
+    <h1>
+      kr {{ cost_per_child }} gir ett barn
+      <em>ett helt skoleår.</em>
+    </h1>
+
+    <p class="hero-sub">
+      I Burundi vokser tusenvis av barn opp uten tilgang til bøker, uniform eller skrivesaker.
+      Rise for Africa er allerede der — og du kan gi et barn sjansen det fortjener.
+    </p>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <div class="progress-raised">
+          kr {{ raised_nok }} <span>samlet inn</span>
+        </div>
+        <div class="progress-goal">Mål: kr {{ goal_nok }}</div>
+      </div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner"></div>
+      </div>
+      <div class="progress-sub">
+        <span><strong>{{ children_funded }} barn</strong> finansiert hittil</span>
+        <span>{{ donors }} givere · siden april 2026</span>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="{{ gofundme_url }}" target="_blank" rel="noopener" class="btn-hero-primary">
+        ❤ &nbsp;Doner nå på GoFundMe
+      </a>
+      <a href="#hva-du-gir" class="btn-hero-outline">
+        Se hva donasjon gir →
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <span>✔ GoFundMe-verifisert</span>
+      <span>✔ 100% går til barna</span>
+      <span>✔ Alle beløp hjelper</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── IMPACT STATS ── -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-card">
+      <span class="stat-num" data-target="{{ children_last_year }}">0</span>
+      <div class="stat-label">Barn hjalp vi i 2025</div>
+      <div class="stat-sub">Dokumentert og verifisert</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="{{ children_goal }}">0</span>
+      <div class="stat-label">Barn er målet for 2026–27</div>
+      <div class="stat-sub">Skoleåret starter snart</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num"><span class="stat-unit">kr</span>1 000</span>
+      <div class="stat-label">Gir ett barn ett helt skoleår</div>
+      <div class="stat-sub">Bøker · Uniform · Mentorskap</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEMET ── -->
+<section class="section section-cream" id="problemet">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-visual">
+        <span class="stat-big">1 av 3</span>
+        <div class="stat-big-label">barn i Burundi<br>begynner aldri på skolen</div>
+        <div class="stat-divider"></div>
+        <div class="stat-secondary">Kilde: UNICEF / World Bank 2024</div>
+      </div>
+      <div>
+        <div class="section-eyebrow">Problemet</div>
+        <h2 class="section-title">Fattigdom tvinger familier til å velge mellom mat og skolegang</h2>
+        <ul class="problem-list">
+          <li>
+            <div class="problem-icon">📚</div>
+            <div>Mangel på skolebøker og uniform er den vanligste årsaken til at barn dropper ut — selv der skoleplass er gratis.</div>
+          </li>
+          <li>
+            <div class="problem-icon">👧</div>
+            <div>For jenter er konsekvensen særlig alvorlig: uten skolegang ender mange opp i tidlig ekteskap som tenåring.</div>
+          </li>
+          <li>
+            <div class="problem-icon">💡</div>
+            <div>Skolegang bryter generasjonskretsen av fattigdom. Utdanning er det sterkeste enkeltverktøyet vi har.</div>
+          </li>
+          <li>
+            <div class="problem-icon">🤝</div>
+            <div>Rise for Africa er allerede på bakken i Bujumbura med lokale samarbeidspartnere og etablerte programmer.</div>
+          </li>
+        </ul>
+        <a href="{{ gofundme_url }}" target="_blank" rel="noopener" class="btn-hero-primary" style="font-size:.9rem;padding:13px 28px;">
+          Hjelp ett barn nå →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HVA DIN GAVE GIR ── -->
+<section class="section" id="hva-du-gir">
+  <div class="container">
+    <div class="container-narrow">
+      <div class="section-eyebrow">Hva pengene går til</div>
+      <h2 class="section-title">Kr 1 000 er ett barn — <br>helt konkret.</h2>
+      <p class="section-body">
+        Ingen administrasjonskostnad, ingen byråkrati. Pengene du donerer går direkte til skolerekvisita og
+        mentorskapsprogrammer for navngitte barn i Bujumbura-regionen.
+      </p>
+    </div>
+
+    <div class="gift-grid">
+      <div class="gift-card">
+        <span class="gift-icon">📖</span>
+        <h3>Skolebøker & hefter</h3>
+        <p>Alle pensumlister dekket for ett helt skoleår. Ingen elev skal sitte uten boken læreren underviser fra.</p>
+        <span class="gift-pct">~30% av budsjettet</span>
+      </div>
+      <div class="gift-card">
+        <span class="gift-icon">👔</span>
+        <h3>Skoleuniform</h3>
+        <p>Uniform er påkrevd i burundiske skoler. Uten den risikerer barn å bli sendt hjem — eller slutte.</p>
+        <span class="gift-pct">~25% av budsjettet</span>
+      </div>
+      <div class="gift-card">
+        <span class="gift-icon">✏️</span>
+        <h3>Skrivesaker & rekvisita</h3>
+        <p>Penner, blyanter, linjal, kalkulator. Det lille som gjør all forskjell mellom å henge med og falle av.</p>
+        <span class="gift-pct">~20% av budsjettet</span>
+      </div>
+      <div class="gift-card">
+        <span class="gift-icon">🌟</span>
+        <h3>Mentorskap & utvikling</h3>
+        <p>Rise for Africas kjerneprogram: én-til-én mentorer som hjelper barn bygge selvtillit, mål og fremtidstro.</p>
+        <span class="gift-pct">~25% av budsjettet</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOT GRID ── -->
+<section class="dot-section">
+  <div class="section-eyebrow" style="color:#f0a060;margin-bottom:10px">Status nå</div>
+  <h2 class="section-title">Hvert punkt er ett barn.</h2>
+  <p class="dot-section-sub">
+    Nedenfor ser du alle {{ children_goal }} barna vi forsøker å nå dette skoleåret.
+    De oransje er allerede finansiert. De grå venter.
+  </p>
+  <div class="dot-legend">
+    <div class="dot-legend-item">
+      <div class="dot-legend-dot funded"></div> {{ children_funded }} barn finansiert
+    </div>
+    <div class="dot-legend-item">
+      <div class="dot-legend-dot waiting"></div> {{ children_goal - children_funded }} barn venter
+    </div>
+  </div>
+  <div id="dot-grid" role="img" aria-label="{{ children_funded }} av {{ children_goal }} barn finansiert"></div>
+  <p class="dot-caption">
+    Hvert oransje punkt representerer ett barn som <strong>allerede har fått hjelp.</strong>
+    Du kan legge til ett til.
+  </p>
+  <br><br>
+  <a href="{{ gofundme_url }}" target="_blank" rel="noopener" class="btn-hero-primary">
+    ❤ &nbsp;Gjør ett punkt oransje
+  </a>
+</section>
+
+<!-- ── FOUNDER ── -->
+<section class="section" id="om-marie-chantal">
+  <div class="container">
+    <div class="founder-grid">
+      <div class="founder-photo-wrap">
+        <div class="founder-initials">MCN</div>
+        <div class="founder-card">
+          <strong>Marie-Chantal Nzeyimana</strong>
+          <small>Grunnlegger · Rise for Africa</small>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow">Menneskene bak</div>
+        <h2 class="section-title">Fra Burundi til Oslo — og tilbake for å gjøre en forskjell.</h2>
+        <p class="section-body" style="margin-bottom:16px">
+          Marie-Chantal Nzeyimana vokste opp i Burundi og vet på kroppen hva det betyr å vokse opp i et land der utdanning
+          er et privilegium, ikke en selvfølge. I dag bor hun i Oslo — men hjertet er fortsatt i Bujumbura.
+        </p>
+        <blockquote class="founder-quote">
+          "Jeg husker hva det vil si å vokse opp uten ressurser, og jeg husker følelsen av å bli sett
+          av noen som trodde på meg. Det er akkurat det vi prøver å gi disse barna — ikke bare bøker,
+          men troen på at de har en fremtid."
+          <cite>— Marie-Chantal Nzeyimana, Grunnlegger av Rise for Africa</cite>
+        </blockquote>
+        <p class="section-body" style="margin-bottom:28px">
+          I 2025 hjalp Rise for Africa over {{ children_last_year }} barn i Bujumbura-regionen med skolerekvisita og mentorskap.
+          For 2026–2027 er målet {{ children_goal }} barn — men det krever din hjelp.
+        </p>
+        <div class="founder-links">
+          <a href="https://www.linkedin.com/in/marie-chantal-nzeyimana-93741631/" target="_blank" rel="noopener" class="btn-founder-link btn-linkedin">
+            in &nbsp;LinkedIn
+          </a>
+          <a href="https://riseforafrica.org" target="_blank" rel="noopener" class="btn-founder-link btn-rfa">
+            🌍 &nbsp;riseforafrica.org
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── URGENCY CTA ── -->
+<section class="cta-band">
+  <div class="cta-band-inner">
+    <h2>Skoleåret 2026–27 starter snart.</h2>
+    <p>
+      Barna trenger skolerekvisita <em>nå</em> — ikke etter sommerferien. Hvert bidrag,
+      uansett størrelse, finansierer ett steg nærmere et trygt skoleår for ett barn i Burundi.
+    </p>
+    <a href="{{ gofundme_url }}" target="_blank" rel="noopener" class="btn-cta-white">
+      ❤ &nbsp;Doner via GoFundMe
+    </a>
+    <p class="cta-band-meta">Alle beløp hjelper. Kr 500, kr 1 000, kr 5 000 — alt teller.</p>
+  </div>
+</section>
+
+<!-- ── DEL KAMPANJEN ── -->
+<section class="share-section">
+  <div class="share-inner">
+    <div class="section-eyebrow" style="text-align:center;margin-bottom:10px">Del kampanjen</div>
+    <h2 class="section-title" style="text-align:center;font-size:1.6rem;margin-bottom:10px">
+      Det koster ingenting å dele.
+    </h2>
+    <p>Hvert del-klikk når potensielle givere vi ikke kjenner ennå. Hjelp oss spre ordet.</p>
+    <div class="share-btns">
+      <a href="https://wa.me/?text=Kr%201%20000%20gir%20ett%20barn%20i%20Burundi%20ett%20helt%20skole%C3%A5r.%20Hjelp%20Rise%20for%20Africa%20n%C3%A5%201%20000%20barn%3A%20{{ gofundme_url | urlencode }}"
+         target="_blank" rel="noopener" class="btn-share btn-whatsapp">
+        💬 &nbsp;Del på WhatsApp
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ gofundme_url | urlencode }}"
+         target="_blank" rel="noopener" class="btn-share btn-facebook">
+        f &nbsp;Del på Facebook
+      </a>
+      <button class="btn-share btn-copy" onclick="copyLink()">
+        🔗 &nbsp;Kopier lenke
+      </button>
+    </div>
+    <p class="copy-confirm" id="copy-confirm">✔ Lenken er kopiert!</p>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-section" id="faq">
+  <div class="container-narrow">
+    <div class="section-eyebrow">Spørsmål & svar</div>
+    <h2 class="section-title">Vanlige spørsmål</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Hvor går pengene jeg donerer? <span class="faq-arrow">+</span></summary>
+        <p>100% av midlene går direkte til skolerekvisita (bøker, uniform, skrivesaker) og mentorskapsprogrammer for sårbare barn i Bujumbura-regionen. Rise for Africa samarbeider med lokale skoler og partnere for transparent bruk av midlene. GoFundMe gir full innsyn i kampanjen og oppdateringer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kan jeg donere et vilkårlig beløp? <span class="faq-arrow">+</span></summary>
+        <p>Ja, absolutt. Alle beløp hjelper. Kr 500 dekker skolebøker til ett barn. Kr 1 000 gir ett barn et helt skoleår med alt inkludert. Kr 5 000 hjelper 5 barn. Det finnes ingen minimumssats — enhver donasjon teller og gjør en direkte forskjell.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Hvem er Rise for Africa? <span class="faq-arrow">+</span></summary>
+        <p>Rise for Africa er en non-profit organisasjon grunnlagt av Marie-Chantal Nzeyimana. Organisasjonen tilbyr mentorskapsprogrammer og skolestøtte til sårbare unge og enslige mødre i Bujumbura-regionen i Burundi. I 2025 hjalp de over 800 barn.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Hvordan vet jeg at pengene brukes riktig? <span class="faq-arrow">+</span></summary>
+        <p>Kampanjen drives gjennom GoFundMe som er en av verdens mest anerkjente innsamlingsplattformer med full transparens. Marie-Chantal oppdaterer kampanjesiden jevnlig med bilder og rapporter fra arbeidet på bakken. Du kan følge med direkte på GoFundMe.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kan jeg donere regelmessig? <span class="faq-arrow">+</span></summary>
+        <p>Ja! GoFundMe støtter månedlige donasjoner. Kr 100 i måneden = kr 1 200 i året = over ett barn finansiert per år. Løpende støtte er særlig verdifullt fordi det gjør det lettere for Rise for Africa å planlegge og forplikte seg til barna over tid.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <strong>Rise for Africa — Burundi Education Fund 2026–2027</strong><br>
+  Grunnlagt av Marie-Chantal Nzeyimana &nbsp;·&nbsp; Oslo, Norge<br>
+  <a href="https://riseforafrica.org" target="_blank" rel="noopener">riseforafrica.org</a>
+  &nbsp;·&nbsp;
+  <a href="{{ gofundme_url }}" target="_blank" rel="noopener">GoFundMe-kampanjen</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/company/rise-for-africa/" target="_blank" rel="noopener">LinkedIn</a>
+  <br>
+  <span style="font-size:.72rem;opacity:.5">© 2026 Rise for Africa. Alle rettigheter forbeholdt.</span>
+</footer>
+
+<script>
+  /* ── Counter animation ── */
+  const counters = document.querySelectorAll('.stat-num[data-target]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1800;
+      const start = performance.now();
+      const tick = (now) => {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 4);
+        el.textContent = Math.round(ease * target).toLocaleString('nb-NO') + (progress < 1 ? '' : '+');
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c => observer.observe(c));
+
+  /* ── Dot grid ── */
+  const grid = document.getElementById('dot-grid');
+  const funded = {{ children_funded }};
+  const total  = {{ children_goal }};
+  const frag   = document.createDocumentFragment();
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('span');
+    dot.className = i < funded ? 'dot funded' : 'dot';
+    dot.setAttribute('aria-hidden', 'true');
+    frag.appendChild(dot);
+  }
+  grid.appendChild(frag);
+
+  /* ── Copy link ── */
+  function copyLink() {
+    const url = '{{ gofundme_url }}';
+    navigator.clipboard.writeText(url).then(() => {
+      const el = document.getElementById('copy-confirm');
+      el.style.display = 'block';
+      setTimeout(() => { el.style.display = 'none'; }, 3000);
+    });
+  }
+</script>
+
+</body>
+</html>
